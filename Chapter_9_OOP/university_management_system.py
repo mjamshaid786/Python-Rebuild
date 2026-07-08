@@ -12,20 +12,14 @@ class Student:
 
     '''-----Add Course Marks Function-----'''
     def add_course_marks(self, course_title="", course_marks=0):
-        student_id = int(input("Enter Student ID: "))
-        for student in uni.students_list:
-            if student.id == student_id:
-                course_title = input("Enter course Title: ")
-                course_marks = int(input("Enter course Marks: "))
-                self.courses[course_title] = course_marks
-                print("Record Added Successfully !")
-            else:
-                print("Student Not Found.")
+        self.courses[course_title] = course_marks
+        self.cgpa_calculator()
+        
 
     '''-----CGPA Calculator-----'''
     def cgpa_calculator(self):
             if not self.courses: # Check if the courses dictionary is empty to prevent ZeroDivisionError
-                self.cgpa = 0.0
+                self.__cgpa = 0.0
                 return
 
             gpa_list = []
@@ -41,22 +35,21 @@ class Student:
                 else:
                     gpa_list.append(0.0)
                     
-            self.cgpa = round(sum(gpa_list) / len(self.courses), 2)
+            self.__cgpa = round(sum(gpa_list) / len(self.courses), 2)
 
     '''---Academic Records-----'''
     def display_academic_record(self):
         self.cgpa_calculator()
-        student_id = int(input("Enter Student ID: "))
-        for student in uni.students_list:
-            if student.id == student_id:
+        print(f"Student ID: {self.id}")
+        print(f"Student Name: {self.name.title()}")
+        print("-" * 5, "ENROLLED COURSES", "-" * 5)
 
-                print(f"Student ID: {student.id}")
-                print(f"Student Name: {student.name.title()}")
-                print("-" * 5, "ENROLLED COURSES", "-" * 5)
-                for course in self.courses:
-                    print(course)
-                print("-" * 30)
-                print(f"CGPA: {self.cgpa}")
+        for course, marks in self.courses.items():
+            print(f"{course}: {marks}")
+            
+        print("-" * 30)
+        print(f"CGPA: {self.__cgpa}")
+        
 
 """-----UNIVERSITY MANAGEMENT CLASS-----"""
 class University:
@@ -67,7 +60,7 @@ class University:
     def find_student_by_id(self, search_id):
         for student in self.students_list:
             if student.id == search_id:
-                return f"Student(ID: {student.id}, Name: '{student.name}')"
+                return student
         return None
 
     '''-----Register Student-----'''
@@ -77,7 +70,6 @@ class University:
 
   
 uni = University()
-st = Student()
 
 while True:
     user_choice = input("""
@@ -88,20 +80,47 @@ while True:
                             5. Press 5 to exit. """)
     match user_choice:
         case "1":
-            id = int(input("Enter Student ID: "))
-            name = input("Enter Student Name: ")
-            s1 = Student(id, name)
-            uni.register_student(s1)
-            print(f"{s1.name.title()} Student Added Successfully: ")
+            try:
+                id = int(input("Enter Student ID: "))
+                name = input("Enter Student Name: ").strip()
+                if not name.replace(" ", "").isalpha():
+                    print("Error: Name must contain only alphabets!")
+                    continue
+                    
+                s1 = Student(id, name)
+                uni.register_student(s1)
+                print(f"{s1.name.title()} Student Added Successfully!")
+            except ValueError:
+                print("Invalid Input! ID must be a number.")
 
         case "2":
-            student_id = int(input("Enter student ID: "))
+            student_id = int(input("Enter student ID to search: "))
             founded_student = uni.find_student_by_id(student_id)
-            print(founded_student)
+            
+            if founded_student is not None:
+                print(f"Student Found! Name: {founded_student.name.title()} (ID: {founded_student.id})")
+            else:
+                print("Student Not Found!")
         case "3":
-            st.add_course_marks()
+            student_id = int(input("Enter Student ID to add marks: "))
+            found_student = uni.find_student_by_id(student_id)
+            
+            if found_student is not None:
+                course_title = input("Enter course Title: ")
+                course_marks = int(input("Enter course Marks: "))
+                found_student.add_course_marks(course_title, course_marks)
+            else:
+                print("Error: Student Not Found.")
+
         case "4":
-            st.display_academic_record()
+            student_id = int(input("Enter Student ID to show record: "))
+            found_student = uni.find_student_by_id(student_id)
+            
+            if found_student is not None:
+                print("\n" + "="*10 + " ACADEMIC REPORT " + "="*10)
+                found_student.display_academic_record()
+            else:
+                print("Error: Student Record Not Found.")
         case "5":
             print("Bye-Bye")
             break
