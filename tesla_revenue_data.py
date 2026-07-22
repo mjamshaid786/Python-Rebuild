@@ -1,0 +1,30 @@
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+
+# The working URL for this data on the course platform is often this one:
+url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/revenue.htm"
+
+# 1. Use pandas to read all tables from the URL.
+# Note: The .html file is often redirected or deleted, but the .htm file 
+# often remains active for these labs.
+try:
+    tables = pd.read_html(url)
+except ValueError:
+    print("Error: No tables found at the URL. Please verify the URL is correct and active.")
+    exit()
+
+# The Tesla Quarterly Revenue table is the second table (index 1).
+tesla_revenue = tables[1]
+tesla_revenue.columns = ["Date", "Revenue"] # Assign column names
+
+# 2. Post-processing
+# Clean the 'Revenue' column: remove $ and ,
+# .astype(str) ensures the operation works even if the column type is mixed.
+tesla_revenue["Revenue"] = tesla_revenue['Revenue'].astype(str).str.replace(r'[\$,]', "", regex=True)
+
+# Remove rows with empty strings or NaN values
+tesla_revenue.dropna(inplace=True)
+tesla_revenue = tesla_revenue[tesla_revenue['Revenue'] != ""]
+
+print(tesla_revenue.tail())
