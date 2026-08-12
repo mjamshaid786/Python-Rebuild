@@ -11,3 +11,15 @@ id = input("Enter your ID: ")
 python_marks = int(input("Enter your Python Marks: "))
 if python_marks < 0 or python_marks > 100:
     print("Please Enter Valid Marks")
+
+sql_marks = int(input("Enter your SQL Marks: "))
+if sql_marks < 0 or python_marks > 100:
+    print("Please Enter Valid Marks")
+
+database_marks = int(input("Enter your Database Marks: "))
+if python_marks < 0 or python_marks > 100:
+    print("Please Enter Valid Marks")
+
+networking_marks = int(input("Enter your Networking Marks: "))
+if python_marks < 0 or python_marks > 100:
+    print("Please Enter Valid Marks")
