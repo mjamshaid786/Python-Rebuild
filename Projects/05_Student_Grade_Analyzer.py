@@ -1,7 +1,11 @@
 # ==================================================
 #               STUDENT GRADE ANALYZER
 # ==================================================
-
+print('''
+==================================
+      STUDENT GRADE REPORT
+==================================
+''')
 name = input("Enter your name: ").title()
 id = input("Enter your ID: ")
 
@@ -17,9 +21,13 @@ if sql_marks < 0 or python_marks > 100:
     print("Please Enter Valid Marks")
 
 database_marks = int(input("Enter your Database Marks: "))
-if python_marks < 0 or python_marks > 100:
+if database_marks < 0 or python_marks > 100:
     print("Please Enter Valid Marks")
 
 networking_marks = int(input("Enter your Networking Marks: "))
-if python_marks < 0 or python_marks > 100:
+if networking_marks < 0 or python_marks > 100:
+    print("Please Enter Valid Marks")
+
+mathematics_marks = int(input("Enter your Mathematics Marks: "))
+if mathematics_marks < 0 or python_marks > 100:
     print("Please Enter Valid Marks")
