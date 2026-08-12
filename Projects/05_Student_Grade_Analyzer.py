@@ -12,22 +12,11 @@ id = input("Enter your ID: ")
 # =======================================
 #        GETTING USER MARKS
 # =======================================
-python_marks = int(input("Enter your Python Marks: "))
-if (python_marks < 0 or python_marks > 100):
-    print("Please Enter Valid Marks")
-
-sql_marks = int(input("Enter your SQL Marks: "))
-if sql_marks < 0 or python_marks > 100:
-    print("Please Enter Valid Marks")
-
-database_marks = int(input("Enter your Database Marks: "))
-if database_marks < 0 or python_marks > 100:
-    print("Please Enter Valid Marks")
-
-networking_marks = int(input("Enter your Networking Marks: "))
-if networking_marks < 0 or python_marks > 100:
-    print("Please Enter Valid Marks")
-
-mathematics_marks = int(input("Enter your Mathematics Marks: "))
-if mathematics_marks < 0 or python_marks > 100:
+try:
+    python_marks = int(input("Enter your Python Marks: "))
+    if 0 <= python_marks <= 100:
+        print(f"Your marks are added: {python_marks}")
+    else:
+        print("Please Enter Valid Marks")
+except ValueError:
     print("Please Enter Valid Marks")
