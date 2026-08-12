@@ -4,3 +4,7 @@
 
 name = input("Enter your name: ").title()
 id = input("Enter your ID: ")
+
+# =======================================
+#        GETTING USER MARKS
+# ========================================
