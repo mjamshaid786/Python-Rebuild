@@ -19,43 +19,47 @@ while True:
             print("Please Enter Valid Marks")
     except ValueError:
         print("Please Enter Valid Marks")
-        break
-
-try:
-    sql_marks = int(input("Enter your SQL Marks: "))
-    if 0 <= sql_marks <= 100:
-        print(f"Your marks are added: {sql_marks}")
-    else:
+        
+while True:
+    try:
+        sql_marks = int(input("Enter your SQL Marks: "))
+        if 0 <= sql_marks <= 100:
+            print(f"Your marks are added: {sql_marks}")
+            break
+        else:
+            print("Please Enter Valid Marks")
+    except ValueError:
         print("Please Enter Valid Marks")
-except ValueError:
-    print("Please Enter Valid Marks")
-
-try:
-    database_marks = int(input("Enter your Database Marks: "))
-    if 0 <= database_marks <= 100:
-        print(f"Your marks are added: {database_marks}")
-    else:
+while True:
+    try:
+        database_marks = int(input("Enter your Database Marks: "))
+        if 0 <= database_marks <= 100:
+            print(f"Your marks are added: {database_marks}")
+            break
+        else:
+            print("Please Enter Valid Marks")
+    except ValueError:
         print("Please Enter Valid Marks")
-except ValueError:
-    print("Please Enter Valid Marks")
-
-try:
-    networking_marks = int(input("Enter your Networking Marks: "))
-    if 0 <= networking_marks <= 100:
-        print(f"Your marks are added: {networking_marks}")
-    else:
+while True:
+    try:
+        networking_marks = int(input("Enter your Networking Marks: "))
+        if 0 <= networking_marks <= 100:
+            print(f"Your marks are added: {networking_marks}")
+            break
+        else:
+            print("Please Enter Valid Marks")
+    except ValueError:
         print("Please Enter Valid Marks")
-except ValueError:
-    print("Please Enter Valid Marks")
-
-try:
-    mathematics_marks = int(input("Enter your Mathematics Marks: "))
-    if 0 <= mathematics_marks <= 100:
-        print(f"Your marks are added: {mathematics_marks}")
-    else:
+while True:
+    try:
+        mathematics_marks = int(input("Enter your Mathematics Marks: "))
+        if 0 <= mathematics_marks <= 100:
+            print(f"Your marks are added: {mathematics_marks}")
+            break
+        else:
+            print("Please Enter Valid Marks")
+    except ValueError:
         print("Please Enter Valid Marks")
-except ValueError:
-    print("Please Enter Valid Marks")
 
 #===============================
 #       CALCULATIONS
