@@ -1,0 +1,9 @@
+order_id,product,category,price,quantity
+1001,Bread,Bakery,150,2
+1002,Eggs,Dairy,300,3
+1003,Milk,Dairy,250,2
+1004,Bread,Bakery,150,5
+1005,Rice,Grocery,400,4
+1006,Eggs,Dairy,300,2
+1007,Milk,Dairy,250,3
+1008,Rice,Grocery,400,2
