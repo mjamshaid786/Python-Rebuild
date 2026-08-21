@@ -1,0 +1,28 @@
+[
+    {
+        "id": 101,
+        "name": "Ali",
+        "city": "Faisalabad",
+        "orders": [
+            {
+                "product": "Bread",
+                "amount": 150
+            },
+            {
+                "product": "Milk",
+                "amount": 250
+            }
+        ]
+    },
+    {
+        "id": 102,
+        "name": "Ahmed",
+        "city": "Lahore",
+        "orders": [
+            {
+                "product": "Eggs",
+                "amount": 300
+            }
+        ]
+    }
+]
