@@ -1,0 +1,6 @@
+order_id,product,price,quantity
+1001,Bread,150,2
+1002,Eggs,300,3
+1003,Milk,250,2
+1004,Bread,abc,5
+1005,Rice,400,4
