@@ -25,7 +25,18 @@ import dotenv
 from dotenv import find_dotenv, load_dotenv
 dotenv_path = find_dotenv() #Find the .env folder automatically
 load_dotenv(dotenv_path)
-db_config = os.getenv("db_config")
+
+#-------------- Connecting To Database
+with psycopg2.connect(
+    host=os.getenv("host"),
+    user=os.getenv("user"),
+    password=os.getenv("password"),
+    port=os.getenv("port")) as conn:
+
+    with conn.cursor() as cur:
+        
+
+
 
 
 
