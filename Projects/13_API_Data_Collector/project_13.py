@@ -23,7 +23,7 @@ def fetch_users():
 
 #================================================
 #      EXTRACTION REQUIRED DATA FUNCTION
-#================================================
+#==============================================
 
 # Getting Required Fields From Users Data
 def extract_user_data(users):
