@@ -26,33 +26,22 @@ from dotenv import find_dotenv, load_dotenv
 dotenv_path = find_dotenv() #Find the .env folder automatically
 load_dotenv(dotenv_path)
 
-#-------------- Connecting To Database
-with psycopg2.connect(
-    host=os.getenv("host"),
-    user=os.getenv("user"),
-    password=os.getenv("password"),
-    port=os.getenv("port")) as conn:
-
-    conn.autocommit = True
-
-    with conn.cursor() as cur:
-        cur.execute("")
-        print("Database created Successfuly !")
-
-
-
-
-
-
-
-
-
 
 
 #==============================================
 #           CREATING DATABASE
 #==============================================
 def creating_database(db_name):
-    print("OK")
+    with psycopg2.connect(
+    host=os.getenv("host"),
+    user=os.getenv("user"),
+    password=os.getenv("password"),
+    port=os.getenv("port")) as conn:
 
-creating_database("db")
+        conn.autocommit = True
+
+        with conn.cursor() as cur:
+            cur.execute(f"CREATE DATABASE {db_name} ;")
+            print("Database created Successfuly !")
+
+creating_database("python_data_pipeline")
