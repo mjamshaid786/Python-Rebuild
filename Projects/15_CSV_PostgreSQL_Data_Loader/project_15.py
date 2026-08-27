@@ -23,6 +23,15 @@ import psycopg2 # --> pip install psycopg2
 import os
 import dotenv
 from dotenv import find_dotenv, load_dotenv
+dotenv_path = find_dotenv() #Find the .env folder automatically
+load_dotenv(dotenv_path)
+db_config = os.getenv("db_config")
+
+
+
+
+
+
 
 
 #==============================================
