@@ -37,13 +37,14 @@ def creating_database(db_name):
     user=os.getenv("user"),
     password=os.getenv("password"),
     port=os.getenv("port")) 
-    logger.info("Connection Successfull !")
 
     conn.autocommit = True
-
+    
+    logger.info("Connection Successfull !")
     with conn.cursor() as cur:
+        logger.info("Creating Database...")
         cur.execute(f"CREATE DATABASE {db_name} ;")
-        print("Database created Successfuly !")
+        logger.info("Database created successfully !")
     conn.close()
 
 creating_database("python_data_pipeline")
