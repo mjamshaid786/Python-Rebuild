@@ -21,7 +21,7 @@ import psycopg2 # --> pip install psycopg2
 
 #-------------- FOR .ENV ---------------
 import os
-import 
+import dotenv
 
 
 #==============================================
