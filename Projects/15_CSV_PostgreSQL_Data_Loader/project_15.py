@@ -2,7 +2,7 @@
 #           IMPORTING LIBRARIES
 #==============================================
 #-------------- IMPORTING FUNCTIONS -----------
-from 1_creating_database import creating_database
+from creating_database import creating_database
 
 #-------------- FOR LOGGING ---------------
 import logging
