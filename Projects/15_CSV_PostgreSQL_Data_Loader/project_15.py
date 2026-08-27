@@ -21,7 +21,7 @@ import psycopg2 # --> pip install psycopg2
 
 #-------------- FOR .ENV ---------------
 import os
-import dotenv
+# import dotenv
 from dotenv import find_dotenv, load_dotenv
 dotenv_path = find_dotenv() #Find the .env folder automatically
 load_dotenv(dotenv_path)
@@ -33,8 +33,12 @@ with psycopg2.connect(
     password=os.getenv("password"),
     port=os.getenv("port")) as conn:
 
+    conn.autocommit = True
+
     with conn.cursor() as cur:
-        
+        cur.execute("")
+        print("Database created Successfuly !")
+
 
 
 
