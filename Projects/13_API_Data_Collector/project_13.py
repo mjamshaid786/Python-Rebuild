@@ -25,7 +25,7 @@ def fetch_users():
 #      EXTRACTION REQUIRED DATA FUNCTION
 #================================================
 
-# Getting Required Fields From Users 
+# Getting Required Fields From Use
 def extract_user_data(users):
     clean_users = []
     for user in users:
