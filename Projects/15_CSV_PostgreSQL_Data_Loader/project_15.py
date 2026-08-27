@@ -24,18 +24,20 @@ import os
 # import dotenv
 from dotenv import find_dotenv, load_dotenv
 dotenv_path = find_dotenv() #Find the .env folder automatically
-
+logger.info("Loading .env variables...")
 load_dotenv(dotenv_path)
-
+logger.info(".env loaded successfull!")
 #==============================================
 #           CREATING DATABASE
 #==============================================
 def creating_database(db_name):
+    logger.info("connection PostgresSQL...")
     conn = psycopg2.connect(
     host=os.getenv("host"),
     user=os.getenv("user"),
     password=os.getenv("password"),
     port=os.getenv("port")) 
+    logger.info("Connection Successfull !")
 
     conn.autocommit = True
 
