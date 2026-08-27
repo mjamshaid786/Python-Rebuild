@@ -50,4 +50,3 @@ def creating_database(db_name):
     except Exception as e:
         print(f"Exception : {e}")
 
-# creating_database("python_data_pipeline")
