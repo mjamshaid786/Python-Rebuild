@@ -31,4 +31,4 @@ dotenv_path = find_dotenv() #Find the .env folder automatically
 #==============================
 #       CALLING FUNCTIONS
 #==============================
-creating_database("python_data_pipeline")
+# creating_database("python_data_pipeline")
