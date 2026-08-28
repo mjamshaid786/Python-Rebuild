@@ -18,3 +18,9 @@ logger.addHandler(file_handler)
 import csv
 #-------------- FOR PostgreSQL ---------------
 import psycopg2
+
+#==============================================
+#           CREATING DATABASE
+#==============================================
+def creating_database(db_name):
+    print("OK")
