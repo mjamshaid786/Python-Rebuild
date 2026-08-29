@@ -3,7 +3,8 @@
 #==============================================
 #-------------- IMPORTING FUNCTIONS -----------
 from creating_database import creating_database
-
+from creating_table import creating_table
+from csv_to_database import csv_to_postgresql
 #-------------- FOR LOGGING ---------------
 import logging
 logger = logging.getLogger("project_15_logger")
@@ -32,3 +33,5 @@ dotenv_path = find_dotenv() #Find the .env folder automatically
 #       CALLING FUNCTIONS
 #==============================
 # creating_database("python_data_pipeline")
+# creating_table("users")
+csv_to_postgresql("users")
