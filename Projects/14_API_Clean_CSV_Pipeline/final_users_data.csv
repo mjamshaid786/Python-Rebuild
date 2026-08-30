@@ -1,4 +1,4 @@
-id,fName,email,age,city,company
+id,full_name,email,age,city,company
 1,Emily Johnson,emily.johnson@x.dummyjson.com,29,Phoenix,"Dooley, Kozey and Cronin"
 2,Michael Williams,michael.williams@x.dummyjson.com,36,Houston,Spinka - Dickinson
 3,Sophia Brown,sophia.brown@x.dummyjson.com,43,Washington,Schiller - Zieme
