@@ -1386,7 +1386,7 @@ PostgreSQL
 sales Table
 ```
 
-This project represents an important step in my journey toward building practical **real-time Data Engineering pipelines**.
+
 ::: 
 
 ::: 
