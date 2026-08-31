@@ -12,5 +12,3 @@ logger.addHandler(handler)
 file_handler = logging.FileHandler("project_18.log",mode='w')
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
-
-logger.info("this is logger_config")
