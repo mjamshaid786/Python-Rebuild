@@ -1,2 +1,2 @@
 import logging
-logger = logging.getLogger("mytestlogger")
+logger = logging.getLogger("project_18_logger")
