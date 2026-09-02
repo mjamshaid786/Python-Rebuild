@@ -10,3 +10,9 @@ consumer = Consumer({
     'group.id': 'my-simple-group',
     'auto.offset.reset': 'earliest'
 })
+# 2. Topic Subscribe Karein
+topic_name = 'sales'
+consumer.subscribe([topic_name])
+
+print("Consumer Listening... (Press Ctrl+C to stop)")
+
