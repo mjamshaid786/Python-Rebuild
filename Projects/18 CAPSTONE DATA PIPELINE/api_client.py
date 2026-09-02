@@ -5,8 +5,8 @@ logger = logging.getLogger(f"project_18_logger.{__name__}")
 def getting_api_data():
     API_URL = "https://dummyjson.com/users"
     reponse = requests.get(API_URL, timeout=10)
-    data = json.load(reponse)
-    print(data)
+    data = reponse.json()
+    print(data.keys())
 
 getting_api_data()
 
