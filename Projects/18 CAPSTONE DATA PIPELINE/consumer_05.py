@@ -26,7 +26,7 @@ try:
         if msg.error():
             continue
 
-        # Bytes ko String aur fir JSON me decode karein
+        # Converting bytes back to json 
         data = json.loads(msg.value().decode('utf-8'))
         
         print(f"\nReceived -> Sender: {data['sender']} | Message: {data['message']}")
