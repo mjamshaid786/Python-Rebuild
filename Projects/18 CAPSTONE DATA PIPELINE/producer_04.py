@@ -1,7 +1,7 @@
 import logging
 import logger_config
 logger = logging.getLogger(f"project_18_logger.{__name__}")
-
+from flattening_users_data_03 import data_flattening, users
 
 import json
 from confluent_kafka import Producer # for installng Run --> pip install confluent-kafka (verify using [pip list | Select-String "confluent-kafka"]
