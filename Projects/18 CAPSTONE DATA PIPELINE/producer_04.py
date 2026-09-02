@@ -2,7 +2,7 @@ import logging
 import logger_config
 logger = logging.getLogger(f"project_18_logger.{__name__}")
 from flattening_users_data_03 import data_flattening, users
-users = data_flattening(users)
+final_users = data_flattening(users)
 import json
 from confluent_kafka import Producer # for installng Run --> pip install confluent-kafka (verify using [pip list | Select-String "confluent-kafka"]
 
@@ -19,32 +19,27 @@ logger.info("Topic Created --> ", topic_name)
 logger.info("Producer Is Ready To Send Data.")
 
 while True:
-        try:
-            user_choice = input(f"Enter 1 to Add Item OR Enter 0 to Exit : ").strip()
-            if user_choice == "1":
-                ok
-            elif user_choice == "0":
-                break
+    try:
+        user_choice = input(f"Enter 1 to Add Item OR Enter 0 to Exit : ").strip()
+        if user_choice == "1":
+            for user in final_users:
+                    payload = {"id": user.get('id', 'N/A'),
+                        "full_name": user.get('fullName', 'N/A'),
+                        "email": user['email', 'N/A'],
+                        "age": user['age', 'N/A'],
+                        "city": user['city', 'N/A'],
+                        "company" : user['company', 'N/A']
+                        }
             
-            else:
-                print("Please Enter Valid Value")
+
+            # Convert data into bytes and send to kafka
+                    bytes_data = json.dumps(payload).encode('utf-8')
+                    producer.produce(topic_name, value=bytes_data)
+                    producer.flush()
+            logger.info("Data Produced Successfully.")
+        elif user_choice == "0":
+            break
+    except ValueError:
+                print("Please Enter Valid Option !")
                 continue
-        except ValueError:
-            print("Please Enter Valid Option !")
-            continue
-
-        # Message Payload
-        payload = {"order_id": order_id,
-                    "product": product_name,
-                    "price": price,
-                    "quantity": quantity,
-                    "total": total
-                    }
-        
-
-        # Convert data into bytes and send to kafka
-        bytes_data = json.dumps(payload).encode('utf-8')
-        producer.produce(topic_name, value=bytes_data)
-        producer.flush()
-
 print("Producer Closed.")
