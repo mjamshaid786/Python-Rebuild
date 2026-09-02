@@ -1,8 +1,9 @@
 import logging
-from main import data
 import logger_config
 logger = logging.getLogger(f"project_18_logger.{__name__}")
-def traforming_data(data):
+from api_client import getting_api_data
+data = getting_api_data()
+def transforming_data(data):
     if data:
         logger.info("Data Received Successfully.")
         logger.info("Getting Required Features From Raw Data")
@@ -19,4 +20,4 @@ def traforming_data(data):
             }
             clean_users.append(clean_user)
         logger.info("Required Features Received Successfully.")
-        return clean_user
+        return clean_users
