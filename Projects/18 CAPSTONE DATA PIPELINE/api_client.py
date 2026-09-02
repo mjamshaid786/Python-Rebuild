@@ -7,7 +7,7 @@ def getting_api_data():
     try:
         response = requests.get(API_URL, timeout=10)
         response.raise_for_status()
-        return response.json
+        return response.json()
     except requests.exceptions.ConnectionError as c:
         print("Connection ERROR !", c)
     except requests.exceptions.Timeout as t:
@@ -17,6 +17,4 @@ def getting_api_data():
     except requests.RequestException as e:
         print("ERROR !", e)
 
-
-getting_api_data()
 
