@@ -8,5 +8,3 @@ from api_client import getting_api_data
 #                   MAIN
 #==============================================
 data = getting_api_data()
-if data:
-    print(type(data))
