@@ -9,4 +9,3 @@ from data_transformation import transforming_data, data
 #                   MAIN
 #==============================================
 
-users = transforming_data(data)
