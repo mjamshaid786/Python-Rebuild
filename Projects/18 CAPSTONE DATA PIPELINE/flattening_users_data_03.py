@@ -3,7 +3,6 @@ import logger_config
 logger = logging.getLogger(f"project_18_logger.{__name__}")
 from data_transformation_02 import transforming_data, data
 users = transforming_data(data)
-print(len(users))
 
 def data_flattening(users):
     logger.info("Flattening The Users Data...")
@@ -21,5 +20,3 @@ def data_flattening(users):
     logger.info("Flattening Complete")
     return final_users
 
-
-final_users = data_flattening(users)
