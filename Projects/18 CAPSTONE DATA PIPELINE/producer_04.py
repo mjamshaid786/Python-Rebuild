@@ -6,7 +6,7 @@ final_users = data_flattening(users)
 import json
 from confluent_kafka import Producer # for installng Run --> pip install confluent-kafka (verify using [pip list | Select-String "confluent-kafka"]
 
-
+# 1. Kafka Connection Setup
 try:
     logger.info("Connecting To Producer...")
     producer = Producer({'bootstrap.servers': 'localhost:9092'})
