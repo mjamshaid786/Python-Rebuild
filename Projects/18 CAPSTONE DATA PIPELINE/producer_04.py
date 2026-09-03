@@ -35,8 +35,8 @@ while True:
             # Convert data into bytes and send to kafka
                     bytes_data = json.dumps(payload).encode('utf-8')
                     producer.produce(topic_name, value=bytes_data)
-                    producer.flush()
             logger.info("Data Produced Successfully.")
+            producer.flush()
         elif user_choice == "0":
             break
     except ValueError as r:

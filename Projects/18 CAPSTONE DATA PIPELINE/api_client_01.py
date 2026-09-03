@@ -1,4 +1,4 @@
-import logging, requests, json
+import logging, requests
 import logger_config
 logger = logging.getLogger(f"project_18_logger.{__name__}")
 
@@ -11,12 +11,16 @@ def getting_api_data():
         
         return response.json()
     except requests.exceptions.ConnectionError as c:
-        print("Connection ERROR !", c)
+        logger.error(f"Connection ERROR !: {c}")
+        return None
     except requests.exceptions.Timeout as t:
-        print("Timeout ERROR !", t)
+        logger.error(f"Timeout ERROR !: {t}")
+        return None
     except requests.exceptions.HTTPError as h:
-        print("HTTP error !", h)
+        logger.error(f"HTTP error !: {h}")
+        return None
     except requests.RequestException as e:
-        print("ERROR !", e)
+        logger.error(f"ERROR !: {e}")
+        return None
 
 
