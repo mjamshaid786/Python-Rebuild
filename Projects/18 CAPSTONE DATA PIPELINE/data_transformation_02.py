@@ -16,7 +16,7 @@ def transforming_data(data):
                 'email' : user.get('email', 'N/A'),
                 'age' : user.get('age', 'N/A'),
                 'city': user.get('address', {}).get('city', 'N/A'),
-                'company': user.get('company', {}).get('city', 'N/A')
+                'company': user.get('company', {}).get('name', 'N/A')
             }
             clean_users.append(clean_user)
         logger.info("Required Features Received Successfully.")

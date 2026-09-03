@@ -1,8 +1,276 @@
-2026-09-02 09:46:29,381 - project_18_logger.api_client_01 - INFO - Getting Data From API...
-2026-09-02 09:46:30,093 - project_18_logger.data_transformation_02 - INFO - Data Received Successfully.
-2026-09-02 09:46:30,094 - project_18_logger.data_transformation_02 - INFO - Getting Required Features From Raw Data
-2026-09-02 09:46:30,094 - project_18_logger.data_transformation_02 - INFO - Required Features Received Successfully.
-2026-09-02 09:46:30,094 - project_18_logger.flattening_users_data_03 - INFO - Flattening The Users Data...
-2026-09-02 09:46:30,094 - project_18_logger.flattening_users_data_03 - INFO - Flattening Complete
-2026-09-02 09:46:30,125 - project_18_logger.__main__ - INFO - Connecting To Producer...
-2026-09-02 09:46:30,143 - project_18_logger.__main__ - INFO - Producer Is Ready To Send Data.
+2026-09-03 09:50:17,211 - project_18_logger.__main__ - INFO - Creating Connection With Database
+2026-09-03 09:50:17,386 - project_18_logger.__main__ - INFO - Database Connected.
+2026-09-03 09:50:18,611 - project_18_logger.__main__ - INFO - Database Created
+2026-09-03 09:50:18,677 - project_18_logger.__main__ - INFO - Database Connected.
+2026-09-03 09:50:18,827 - project_18_logger.__main__ - INFO - Table Created.
+2026-09-03 09:57:36,448 - project_18_logger.api_client_01 - INFO - Getting Data From API...
+2026-09-03 09:57:37,549 - project_18_logger.data_transformation_02 - INFO - Data Received Successfully.
+2026-09-03 09:57:37,549 - project_18_logger.data_transformation_02 - INFO - Getting Required Features From Raw Data
+2026-09-03 09:57:37,549 - project_18_logger.data_transformation_02 - INFO - Required Features Received Successfully.
+2026-09-03 09:57:37,549 - project_18_logger.flattening_users_data_03 - INFO - Flattening The Users Data...
+2026-09-03 09:57:37,549 - project_18_logger.flattening_users_data_03 - INFO - Flattening Complete
+2026-09-03 09:57:37,799 - project_18_logger.__main__ - INFO - Connecting To Producer...
+2026-09-03 09:57:37,863 - project_18_logger.__main__ - INFO - Producer Is Ready To Send Data.
+2026-09-03 10:00:44,734 - project_18_logger.api_client_01 - INFO - Getting Data From API...
+2026-09-03 10:00:45,421 - project_18_logger.data_transformation_02 - INFO - Data Received Successfully.
+2026-09-03 10:00:45,421 - project_18_logger.data_transformation_02 - INFO - Getting Required Features From Raw Data
+2026-09-03 10:00:45,433 - project_18_logger.data_transformation_02 - INFO - Required Features Received Successfully.
+2026-09-03 10:00:45,433 - project_18_logger.flattening_users_data_03 - INFO - Flattening The Users Data...
+2026-09-03 10:00:45,433 - project_18_logger.flattening_users_data_03 - INFO - Flattening Complete
+2026-09-03 10:00:45,433 - project_18_logger.__main__ - INFO - Connecting To Producer...
+2026-09-03 10:00:45,450 - project_18_logger.__main__ - INFO - Topic Created --> users
+2026-09-03 10:00:45,450 - project_18_logger.__main__ - INFO - Producer Is Ready To Send Data.
+2026-09-03 10:03:06,480 - project_18_logger.api_client_01 - INFO - Getting Data From API...
+2026-09-03 10:03:07,314 - project_18_logger.data_transformation_02 - INFO - Data Received Successfully.
+2026-09-03 10:03:07,314 - project_18_logger.data_transformation_02 - INFO - Getting Required Features From Raw Data
+2026-09-03 10:03:07,314 - project_18_logger.data_transformation_02 - INFO - Required Features Received Successfully.
+2026-09-03 10:03:07,321 - project_18_logger.flattening_users_data_03 - INFO - Flattening The Users Data...
+2026-09-03 10:03:07,322 - project_18_logger.flattening_users_data_03 - INFO - Flattening Complete
+2026-09-03 10:03:07,335 - project_18_logger.__main__ - INFO - Connecting To Producer...
+2026-09-03 10:03:07,340 - project_18_logger.__main__ - INFO - Topic Created --> users
+2026-09-03 10:03:07,341 - project_18_logger.__main__ - INFO - Producer Is Ready To Send Data.
+2026-09-03 10:05:05,231 - project_18_logger.api_client_01 - INFO - Getting Data From API...
+2026-09-03 10:05:05,872 - project_18_logger.data_transformation_02 - INFO - Data Received Successfully.
+2026-09-03 10:05:05,873 - project_18_logger.data_transformation_02 - INFO - Getting Required Features From Raw Data
+2026-09-03 10:05:05,873 - project_18_logger.data_transformation_02 - INFO - Required Features Received Successfully.
+2026-09-03 10:05:05,873 - project_18_logger.flattening_users_data_03 - INFO - Flattening The Users Data...
+2026-09-03 10:05:05,873 - project_18_logger.flattening_users_data_03 - INFO - Flattening Complete
+2026-09-03 10:05:05,884 - project_18_logger.__main__ - INFO - Connecting To Producer...
+2026-09-03 10:05:05,885 - project_18_logger.__main__ - INFO - Topic Created --> users
+2026-09-03 10:05:05,885 - project_18_logger.__main__ - INFO - Producer Is Ready To Send Data.
+2026-09-03 10:06:02,148 - project_18_logger.api_client_01 - INFO - Getting Data From API...
+2026-09-03 10:06:02,809 - project_18_logger.data_transformation_02 - INFO - Data Received Successfully.
+2026-09-03 10:06:02,809 - project_18_logger.data_transformation_02 - INFO - Getting Required Features From Raw Data
+2026-09-03 10:06:02,809 - project_18_logger.data_transformation_02 - INFO - Required Features Received Successfully.
+2026-09-03 10:06:02,824 - project_18_logger.flattening_users_data_03 - INFO - Flattening The Users Data...
+2026-09-03 10:06:02,824 - project_18_logger.flattening_users_data_03 - INFO - Flattening Complete
+2026-09-03 10:06:02,848 - project_18_logger.__main__ - INFO - Connecting To Producer...
+2026-09-03 10:06:02,851 - project_18_logger.__main__ - INFO - Topic Created --> users
+2026-09-03 10:06:02,851 - project_18_logger.__main__ - INFO - Producer Is Ready To Send Data.
+2026-09-03 10:06:12,142 - project_18_logger.__main__ - INFO - Data Produced Successfully.
+2026-09-03 10:06:48,822 - project_18_logger.api_client_01 - INFO - Getting Data From API...
+2026-09-03 10:06:49,479 - project_18_logger.data_transformation_02 - INFO - Data Received Successfully.
+2026-09-03 10:06:49,480 - project_18_logger.data_transformation_02 - INFO - Getting Required Features From Raw Data
+2026-09-03 10:06:49,481 - project_18_logger.data_transformation_02 - INFO - Required Features Received Successfully.
+2026-09-03 10:06:49,483 - project_18_logger.flattening_users_data_03 - INFO - Flattening The Users Data...
+2026-09-03 10:06:49,484 - project_18_logger.flattening_users_data_03 - INFO - Flattening Complete
+2026-09-03 10:06:49,503 - project_18_logger.__main__ - INFO - Connecting To Producer...
+2026-09-03 10:06:49,510 - project_18_logger.__main__ - INFO - Topic Created --> users
+2026-09-03 10:06:49,511 - project_18_logger.__main__ - INFO - Producer Is Ready To Send Data.
+2026-09-03 10:06:51,848 - project_18_logger.__main__ - INFO - Data Produced Successfully.
+2026-09-03 10:07:08,183 - project_18_logger.database_06 - INFO - Creating Connection With Database
+2026-09-03 10:07:08,266 - project_18_logger.database_06 - INFO - Database Connected.
+2026-09-03 10:07:08,269 - project_18_logger.database_06 - ERROR - ERROR: database "capstone_pipeline" already exists
+
+2026-09-03 10:07:08,410 - project_18_logger.database_06 - INFO - Database Connected.
+2026-09-03 10:07:08,422 - project_18_logger.database_06 - INFO - Table Created.
+2026-09-03 10:08:42,015 - project_18_logger.api_client_01 - INFO - Getting Data From API...
+2026-09-03 10:08:42,850 - project_18_logger.data_transformation_02 - INFO - Data Received Successfully.
+2026-09-03 10:08:42,850 - project_18_logger.data_transformation_02 - INFO - Getting Required Features From Raw Data
+2026-09-03 10:08:42,850 - project_18_logger.data_transformation_02 - INFO - Required Features Received Successfully.
+2026-09-03 10:08:42,850 - project_18_logger.flattening_users_data_03 - INFO - Flattening The Users Data...
+2026-09-03 10:08:42,850 - project_18_logger.flattening_users_data_03 - INFO - Flattening Complete
+2026-09-03 10:08:42,883 - project_18_logger.__main__ - INFO - Connecting To Producer...
+2026-09-03 10:08:42,888 - project_18_logger.__main__ - INFO - Topic Created --> users
+2026-09-03 10:08:42,889 - project_18_logger.__main__ - INFO - Producer Is Ready To Send Data.
+2026-09-03 10:10:16,670 - project_18_logger.api_client_01 - INFO - Getting Data From API...
+2026-09-03 10:10:17,402 - project_18_logger.data_transformation_02 - INFO - Data Received Successfully.
+2026-09-03 10:10:17,402 - project_18_logger.data_transformation_02 - INFO - Getting Required Features From Raw Data
+2026-09-03 10:10:17,402 - project_18_logger.data_transformation_02 - INFO - Required Features Received Successfully.
+2026-09-03 10:10:17,402 - project_18_logger.flattening_users_data_03 - INFO - Flattening The Users Data...
+2026-09-03 10:10:17,402 - project_18_logger.flattening_users_data_03 - INFO - Flattening Complete
+2026-09-03 10:10:17,432 - project_18_logger.__main__ - INFO - Connecting To Producer...
+2026-09-03 10:10:17,435 - project_18_logger.__main__ - INFO - Topic Created --> users
+2026-09-03 10:10:17,436 - project_18_logger.__main__ - INFO - Producer Is Ready To Send Data.
+2026-09-03 10:10:29,287 - project_18_logger.__main__ - INFO - Producer Closed.
+2026-09-03 10:10:43,897 - project_18_logger.api_client_01 - INFO - Getting Data From API...
+2026-09-03 10:10:44,584 - project_18_logger.data_transformation_02 - INFO - Data Received Successfully.
+2026-09-03 10:10:44,584 - project_18_logger.data_transformation_02 - INFO - Getting Required Features From Raw Data
+2026-09-03 10:10:44,584 - project_18_logger.data_transformation_02 - INFO - Required Features Received Successfully.
+2026-09-03 10:10:44,584 - project_18_logger.flattening_users_data_03 - INFO - Flattening The Users Data...
+2026-09-03 10:10:44,584 - project_18_logger.flattening_users_data_03 - INFO - Flattening Complete
+2026-09-03 10:10:44,597 - project_18_logger.__main__ - INFO - Connecting To Producer...
+2026-09-03 10:10:44,597 - project_18_logger.__main__ - INFO - Topic Created --> users
+2026-09-03 10:10:44,597 - project_18_logger.__main__ - INFO - Producer Is Ready To Send Data.
+2026-09-03 10:10:47,094 - project_18_logger.__main__ - INFO - Data Produced Successfully.
+2026-09-03 10:10:55,743 - project_18_logger.database_06 - INFO - Creating Connection With Database
+2026-09-03 10:10:55,800 - project_18_logger.database_06 - INFO - Database Connected.
+2026-09-03 10:10:55,801 - project_18_logger.database_06 - ERROR - ERROR: database "capstone_pipeline" already exists
+
+2026-09-03 10:10:55,847 - project_18_logger.database_06 - INFO - Database Connected.
+2026-09-03 10:10:55,847 - project_18_logger.database_06 - INFO - Table Created.
+2026-09-03 10:11:25,131 - project_18_logger.__main__ - INFO - Producer Closed.
+2026-09-03 10:34:38,805 - project_18_logger.api_client_01 - INFO - Getting Data From API...
+2026-09-03 10:34:39,536 - project_18_logger.data_transformation_02 - INFO - Data Received Successfully.
+2026-09-03 10:34:39,536 - project_18_logger.data_transformation_02 - INFO - Getting Required Features From Raw Data
+2026-09-03 10:34:39,536 - project_18_logger.data_transformation_02 - INFO - Required Features Received Successfully.
+2026-09-03 10:34:39,537 - project_18_logger.flattening_users_data_03 - INFO - Flattening The Users Data...
+2026-09-03 10:34:39,538 - project_18_logger.flattening_users_data_03 - INFO - Flattening Complete
+2026-09-03 10:34:39,555 - project_18_logger.__main__ - INFO - Connecting To Producer...
+2026-09-03 10:34:39,560 - project_18_logger.__main__ - INFO - Topic Created --> users
+2026-09-03 10:34:39,561 - project_18_logger.__main__ - INFO - Producer Is Ready To Send Data.
+2026-09-03 10:34:42,618 - project_18_logger.__main__ - INFO - Data Produced Successfully.
+2026-09-03 10:34:49,870 - project_18_logger.database_06 - INFO - Creating Connection With Database
+2026-09-03 10:34:49,934 - project_18_logger.database_06 - INFO - Database Connected.
+2026-09-03 10:34:49,935 - project_18_logger.database_06 - ERROR - ERROR: database "capstone_pipeline" already exists
+
+2026-09-03 10:34:49,993 - project_18_logger.database_06 - INFO - Database Connected.
+2026-09-03 10:34:49,994 - project_18_logger.database_06 - INFO - Table Created.
+2026-09-03 10:34:53,114 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,125 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,126 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,126 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,129 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,130 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,130 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,130 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,130 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,130 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,130 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,142 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,142 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,142 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,142 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,150 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,151 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,151 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,151 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,151 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,158 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,160 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,160 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,166 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,167 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,171 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,172 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,175 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,176 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,179 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,180 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,183 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,184 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,184 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,184 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,191 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,191 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,193 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,193 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,199 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,199 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,200 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,200 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,200 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,200 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,209 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,209 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,209 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,214 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,216 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,216 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,217 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,217 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,217 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,217 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,226 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,226 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,226 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:34:53,226 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:34:53,233 - project_18_logger.__main__ - ERROR - Database Insertion Error: 'msg' is an invalid keyword argument for this function
+2026-09-03 10:35:53,949 - project_18_logger.__main__ - INFO - Database connection closed.
+2026-09-03 10:35:58,265 - project_18_logger.database_06 - INFO - Creating Connection With Database
+2026-09-03 10:35:58,422 - project_18_logger.database_06 - INFO - Database Connected.
+2026-09-03 10:35:58,422 - project_18_logger.database_06 - ERROR - ERROR: database "capstone_pipeline" already exists
+
+2026-09-03 10:35:58,483 - project_18_logger.database_06 - INFO - Database Connected.
+2026-09-03 10:35:58,483 - project_18_logger.database_06 - INFO - Table Created.
+2026-09-03 10:36:01,623 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,631 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,631 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,631 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,642 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,642 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,643 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,654 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,655 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,655 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,679 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,679 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,680 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,682 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,682 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,682 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,689 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,689 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,689 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,706 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,706 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,706 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,714 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,714 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,715 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,721 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,722 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,722 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,728 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,732 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,732 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,733 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,739 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,740 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,740 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,740 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,747 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,752 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,752 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,752 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,766 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,767 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,767 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,771 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,771 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,772 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,777 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,777 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,777 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,781 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,781 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,784 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,788 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,788 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,788 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,789 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,789 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,789 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,797 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,798 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,798 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,803 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,803 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,804 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,806 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,806 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,806 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,813 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,813 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,814 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,820 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,820 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,821 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,823 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,823 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,827 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,830 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,831 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,831 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,837 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,837 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,837 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,840 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,840 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,840 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,846 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,846 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:01,848 - project_18_logger.__main__ - INFO - Data Received.
+2026-09-03 10:36:01,852 - project_18_logger.__main__ - INFO - Inserting Data Into Database
+2026-09-03 10:36:01,853 - project_18_logger.__main__ - INFO - Saved to PostgreSQL
+2026-09-03 10:36:51,598 - project_18_logger.__main__ - INFO - Database connection closed.

@@ -14,7 +14,7 @@ except:
     logger.error("Failed To Connect Producer !")
 # 2. Topic Name
 topic_name = 'users'
-logger.info("Topic Created --> ", topic_name)
+logger.info(f"Topic Created --> {topic_name}")
 
 logger.info("Producer Is Ready To Send Data.")
 
@@ -25,10 +25,10 @@ while True:
             for user in final_users:
                     payload = {"id": user.get('id', 'N/A'),
                         "full_name": user.get('fullName', 'N/A'),
-                        "email": user['email', 'N/A'],
-                        "age": user['age', 'N/A'],
-                        "city": user['city', 'N/A'],
-                        "company" : user['company', 'N/A']
+                        "email": user.get('email', 'N/A'),
+                        "age": user.get('age', 'N/A'),
+                        "city": user.get('city', 'N/A'),
+                        "company" : user.get('company', 'N/A')
                         }
             
 
@@ -39,7 +39,7 @@ while True:
             logger.info("Data Produced Successfully.")
         elif user_choice == "0":
             break
-    except ValueError:
-                print("Please Enter Valid Option !")
+    except ValueError as r:
+                logger.error(f"Please Enter Valid Option !: {r}")
                 continue
-print("Producer Closed.")
+logger.info("Producer Closed.")
